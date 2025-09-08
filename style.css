@@ -1,14 +1,12 @@
 body {
-  background-color: #0a1929;
+  background-color: #f0f7f4;
   font-family: 'Courier New', monospace;
-  color: #e0f2ff;
 }
 
 .pixel-box {
-  border: 4px solid #1976d2;
-  box-shadow: 8px 8px 0 rgba(25, 118, 210, 0.3);
+  border: 4px solid #5a7f72;
+  box-shadow: 8px 8px 0 rgba(90, 127, 114, 0.3);
   position: relative;
-  background-color: #132f4c;
 }
 
 .pixel-box::before {
@@ -16,7 +14,7 @@ body {
   position: absolute;
   width: 8px;
   height: 8px;
-  background-color: #1976d2;
+  background-color: #5a7f72;
   top: -4px;
   left: -4px;
 }
@@ -26,13 +24,13 @@ body {
   position: absolute;
   width: 8px;
   height: 8px;
-  background-color: #1976d2;
+  background-color: #5a7f72;
   bottom: -4px;
   right: -4px;
 }
 
 .pixel-button {
-  background-color: #1976d2;
+  background-color: #7aa095;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -40,58 +38,21 @@ body {
   font-weight: bold;
   position: relative;
   transition: all 0.2s;
-  box-shadow: 4px 4px 0 #1565c0;
-  border: 2px solid #42a5f5;
+  box-shadow: 4px 4px 0 #5a7f72;
 }
 
 .pixel-button:hover {
   transform: translate(2px, 2px);
-  box-shadow: 2px 2px 0 #1565c0;
-  background-color: #1565c0;
+  box-shadow: 2px 2px 0 #5a7f72;
 }
 
 .pixel-grid {
   background-image:
-    linear-gradient(to right, rgba(25, 118, 210, 0.15) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(25, 118, 210, 0.15) 1px, transparent 1px);
+    linear-gradient(to right, rgba(122, 160, 149, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(122, 160, 149, 0.1) 1px, transparent 1px);
   background-size: 20px 20px;
-  background-color: #0a1929;
 }
 
 .pixel-icon {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%2342a5f5" d="M6,6h2v2H6V6z M10,6h2v2h-2V6z M14,6h2v2h-2V6z M18,6h2v2h-2V6z M6,10h2v2H6V10z M10,10h2v2h-2V10z M14,10h2v2h-2V10z M18,10h2v2h-2V10z M6,14h2v2H6V14z M10,14h2v2h-2V14z M14,14h2v2h-2V14z M18,14h2v2h-2V14z M6,18h2v2H6V18z M10,18h2v2h-2V18z M14,18h2v2h-2V18z M18,18h2v2h-2V18z"/></svg>');
-  background-color: #42a5f5;
-  border: 2px solid #90caf9;
-}
-
-/* Status indicator dots */
-.status-dot {
-  width: 12px;
-  height: 12px;
-  margin-right: 8px;
-  border: 2px solid #0a1929;
-  box-shadow: 0 0 0 2px #42a5f5;
-}
-
-/* Text colors for dark theme */
-.text-primary {
-  color: #e0f2ff;
-}
-
-.text-secondary {
-  color: #90caf9;
-}
-
-.text-muted {
-  color: #64b5f6;
-}
-
-/* Link styles for dark theme */
-.dark-link {
-  color: #90caf9;
-  transition: color 0.2s ease;
-}
-
-.dark-link:hover {
-  color: #e3f2fd;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%237aa095" d="M6,6h2v2H6V6z M10,6h2v2h-2V6z M14,6h2v2h-2V6z M18,6h2v2h-2V6z M6,10h2v2H6V10z M10,10h2v2h-2V10z M14,10h2v2h-2V10z M18,10h2v2h-2V10z M6,14h2v2H6V14z M10,14h2v2h-2V14z M14,14h2v2h-2V14z M18,14h2v2h-2V14z M6,18h2v2H6V18z M10,18h2v2h-2V18z M14,18h2v2h-2V18z M18,18h2v2h-2V18z"/></svg>');
 }
