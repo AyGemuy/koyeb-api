@@ -1,0 +1,33 @@
+{
+  "name": "hiuraa-api-base",
+  "version": "1.0.0",
+  "description": "just a base :3",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "rynn",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "latest",
+    "axios": "latest",
+    "chalk": "latest",
+    "os": "latest",
+    "cheerio": "latest",
+    "cors": "latest",
+    "crypto": "latest",
+    "file-type": "latest",
+    "qs": "latest",
+    "uuid": "latest",
+    "bing-translate-api": "latest",
+    "express": "latest",
+    "form-data": "latest",
+    "fs": "latest",
+    "javascript-obfuscator": "latest",
+    "multer": "latest",
+    "node-fetch": "latest",
+    "path": "latest",
+    "yt-search": "latest"
+  }
+}

@@ -1,0 +1,142 @@
+/* Pixel style - Pastel Green Theme */
+body.pixel-bg {
+  background-color: #f0f9f5;
+  background-image:
+    linear-gradient(to right, rgba(200, 230, 210, 0.4) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(200, 230, 210, 0.4) 1px, transparent 1px);
+  background-size: 12px 12px;
+}
+
+.pixel-border {
+  border: 2px solid #a8d8bb;
+  position: relative;
+  background-color: #e8f5ee;
+}
+
+.pixel-border::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #88c8a5;
+  top: -4px;
+  left: -4px;
+  box-shadow:
+    calc(100% + 4px) 0 0 #88c8a5,
+    0 calc(100% + 4px) 0 #88c8a5,
+    calc(100% + 4px) calc(100% + 4px) 0 #88c8a5;
+}
+
+.pixel-header {
+  border-bottom: 3px dashed #b8e0cb;
+  background-color: #d8f0e3;
+}
+
+.pixel-text {
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.05);
+  color: #2a5a45;
+}
+
+.pixel-textarea {
+  border: 2px solid #a8d8bb;
+  background-color: #f5fbf8;
+}
+
+.pixel-code {
+  border: 2px solid #6a9a85;
+  background-color: #e0f0e8;
+  color: #2a5a45;
+}
+
+.pixel-button {
+  border: none;
+  position: relative;
+  transition: all 0.2s;
+  box-shadow: 2px 2px 0 #6a9a85;
+  background-color: #88c8a5;
+  color: white;
+}
+
+.pixel-button:hover {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0 #6a9a85;
+  background-color: #7ab895;
+}
+
+.pixel-button:active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+  background-color: #6aa885;
+}
+
+.pixel-footer {
+  border-top: 2px dashed #b8e0cb;
+  background-color: #d8f0e3;
+}
+
+/* Scrollbar styling to match theme */
+#obfuscatedCode {
+  scrollbar-width: thin;
+  scrollbar-color: #88c8a5 #e0f0e8;
+}
+
+#obfuscatedCode::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+#obfuscatedCode::-webkit-scrollbar-track {
+  background: #e0f0e8;
+  border-radius: 4px;
+}
+
+#obfuscatedCode::-webkit-scrollbar-thumb {
+  background-color: #88c8a5;
+  border-radius: 4px;
+}
+
+/* Status message animation */
+#statusMessage {
+  animation: fadeInOut 3s ease-in-out;
+  background-color: #b8e0cb;
+  color: #2a5a45;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Additional pixel elements */
+.pixel-card {
+  background-color: #e8f5ee;
+  border: 2px solid #a8d8bb;
+  position: relative;
+}
+
+.pixel-card::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #88c8a5;
+  bottom: -3px;
+  right: -3px;
+  box-shadow:
+    calc(-100% - 4px) 0 0 #88c8a5,
+    0 calc(-100% - 4px) 0 #88c8a5,
+    calc(-100% - 4px) calc(-100% - 4px) 0 #88c8a5;
+}

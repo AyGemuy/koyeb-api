@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="REST API praktis untuk pengembangan aplikasi dan BOT WA - YoedzKey">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="icon" href="/image/icon.png" type="image/png">
+  <title>Wudysoft API</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Pixel grid background */
+    .pixel-grid {
+      background-color: #0a1929;
+      background-image:
+        linear-gradient(rgba(14, 35, 58, 0.5) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(14, 35, 58, 0.5) 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+
+    /* Pixel box styling */
+    .pixel-box {
+      position: relative;
+      background-color: #132f4c;
+      border: 4px solid #1976d2;
+      box-shadow: 0 0 0 4px #0a1929, 0 0 0 8px #1976d2;
+      color: #e0f2ff;
+    }
+
+    /* Pixel icon styling */
+    .pixel-icon {
+      background-color: #42a5f5;
+      border: 4px solid #90caf9;
+      box-shadow: 0 0 0 4px #0a1929, 0 0 0 8px #42a5f5;
+      image-rendering: pixelated;
+    }
+
+    /* Pixel button styling */
+    .pixel-button {
+      display: inline-flex;
+      align-items: center;
+      padding: 12px 24px;
+      background-color: #1976d2;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border: none;
+      border: 4px solid #42a5f5;
+      box-shadow: 0 0 0 4px #0a1929, 0 0 0 8px #1976d2;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+
+    .pixel-button:hover {
+      background-color: #1565c0;
+      transform: translateY(2px);
+      box-shadow: 0 0 0 4px #0a1929, 0 0 0 6px #1976d2;
+    }
+
+    .pixel-button:active {
+      transform: translateY(4px);
+      box-shadow: 0 0 0 4px #0a1929, 0 0 0 4px #1976d2;
+    }
+
+    /* Status indicators */
+    .status-indicator {
+      width: 12px;
+      height: 12px;
+      margin-right: 8px;
+      border: 2px solid #0a1929;
+      box-shadow: 0 0 0 2px #42a5f5;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center pixel-grid">
+  <div class="pixel-box p-8 max-w-2xl mx-4">
+    <div class="flex flex-col items-center text-center">
+      <div class="w-24 h-24 mb-6 bg-cover pixel-icon"></div>
+      <h1 class="text-4xl font-bold mb-4 text-blue-100">Wudysoft API</h1>
+      <p class="text-lg mb-6 text-blue-200 max-w-md">Selamat datang di YoedzKey API — REST API praktis untuk mempercepat dan mempermudah pengembangan aplikasi Anda.</p>
+      <div class="flex flex-wrap justify-center gap-4 mb-8">
+        <div class="flex items-center">
+          <div class="status-indicator bg-green-400"></div>
+          <span class="text-sm text-blue-200">Fast</span>
+        </div>
+        <div class="flex items-center">
+          <div class="status-indicator bg-blue-400"></div>
+          <span class="text-sm text-blue-200">Reliable</span>
+        </div>
+        <div class="flex items-center">
+          <div class="status-indicator bg-purple-400"></div>
+          <span class="text-sm text-blue-200">Secure</span>
+        </div>
+      </div>
+      <a href="/docs" class="pixel-button mb-4"> View Documentation <i class="material-icons ml-2 align-middle">arrow_forward</i>
+      </a>
+      <div class="mt-6 text-xs text-blue-300 flex gap-4 flex-wrap justify-center">
+        <a href="https://github.com/shinzxyz" class="hover:text-blue-100 transition-colors">GitHub</a>
+        <a href="https://youtube.yudzdevz.biz.id/" class="hover:text-blue-100 transition-colors">Youtube Download</a>
+        <a href="/user/apicek?=&apikey=wudysoft" class="hover:text-blue-100 transition-colors">API Status</a>
+        <a href="/docs/obfus.html" class="hover:text-blue-100 transition-colors">Obfuscate</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
